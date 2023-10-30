@@ -6,5 +6,13 @@
     "host": "127.0.0.1",
     "port": 5432,
     "dialect": "postgresql"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "1234",
+    "database": "week-11",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgresql"
   }
 }
