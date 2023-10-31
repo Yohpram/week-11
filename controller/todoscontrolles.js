@@ -4,14 +4,14 @@ class Controller {
     static async getalltodo(_, res, next) {
         try {
             const alltodo = await todo.findAll();
-            console.log(alltodo);
-            res.status(200).json({ message: "success" });
+            res.status(200).json({ message: "success", data: alltodo });
         } catch (err) {
             console.log(err, '-->');
             next(err);
         }
     }
-    
+
+
     static async gettododetail(req, res, next) {
         try {
             const{ id } = req.params
