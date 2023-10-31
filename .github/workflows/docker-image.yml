@@ -28,7 +28,7 @@ jobs:
           file: ./Dockerfile
           tags: ${{ secrets.DOCKER_USERNAME }}/todo:latest
           
-          push: true
+          
           
 
           
